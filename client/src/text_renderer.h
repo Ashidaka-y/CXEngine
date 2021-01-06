@@ -8,7 +8,8 @@
 #include "graphics/texture.h"
 #include <map>
 
-#include <freetype2/ft2build.h>
+//#include <freetype2/ft2build.h>
+#include "ft2build.h"
 
 #include "ui.h"
 #include FT_FREETYPE_H

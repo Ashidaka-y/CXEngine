@@ -4,7 +4,7 @@ project (CXEngine LANGUAGES C CXX)
 find_package(CXLua)
 find_package(GLEW CONFIG)
 find_package(glfw3)
-find_package(freetype CONFIG)
+find_package(freetype CONFIG REQUIRED)
 find_package(IMGui)
 find_package(luadbg_static)
 find_package(gsm)
@@ -99,7 +99,7 @@ cotire(CXEngine)
 target_link_libraries(CXEngine
   PRIVATE 
     glfw
-    GLEW
+    GLEW::GLEW
     freetype
     CXLua::CXLua
     IMGui::IMGui

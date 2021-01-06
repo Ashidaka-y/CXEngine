@@ -56,7 +56,7 @@ cotire(CXServer)
 target_link_libraries(CXServer
 PRIVATE
   glfw
-  GLEW
+  GLEW::GLEW
   # SOIL
   CXLua::CXLua
   IMGui::IMGui

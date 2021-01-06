@@ -4,7 +4,7 @@ project(cxluax)
 
 find_package(CXLua)
 find_package(GLEW CONFIG)
-find_package(glfw3)
+find_package(glfw3 CONFIG)
 find_package(IMGui)
 find_package(luadbg_static)
 
@@ -58,7 +58,7 @@ cotire(cxluax)
 target_link_libraries(cxluax
 PRIVATE
   glfw
-  GLEW
+  GLEW::GLEW
   CXLua::CXLua
   IMGui::IMGui
   luadbg_static
